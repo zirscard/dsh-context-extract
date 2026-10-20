@@ -1,0 +1,6 @@
+# dsh-context-extract bundle patch: one host-only row (agent tool + system-prompt
+# section). No client half, no routes, no ledger — everything runs in the host
+# process and shells out to the DSH-bundled Python runtime (openpyxl / python-docx).
+- insert:
+    - id: context-extract
+      name: dsh-context-extract

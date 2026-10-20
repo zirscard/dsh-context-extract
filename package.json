@@ -1,0 +1,35 @@
+{
+  "name": "dsh-context-extract",
+  "version": "0.1.0",
+  "description": "Context extraction and compression for DeepSeek Harness: one context_extract tool that turns long raw documents (financial reports, contracts, ledgers) into dense structured Markdown plus JSON — key metrics, tables, numbered clauses, entities and cross-check alerts — so a downstream pipeline spends far fewer tokens on the same facts.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "runner.js",
+    "core/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zirscard/dsh-context-extract.git"
+  },
+  "homepage": "https://github.com/zirscard/dsh-context-extract#readme",
+  "bugs": {
+    "url": "https://github.com/zirscard/dsh-context-extract/issues"
+  }
+}
